@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Space Standoff</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <section class="menuSec">
+      <div class="menu" onclick="playMusic()">
+        <p>Click Anywhere to play some music</p>
+      </div>
+
+      <div class="hidden howToPlay">
+        Use WASD Keys for the green Player, Space to Shoot 
+        <br></br>
+        Arrow Keys for the Red Player, Press \ to Shoot
+      </div>
+
+      <button onclick="goToGame()" class="start">Click to Start</button>
+      <button class="howPlay" onclick="howToPlay()">How To Play</button>
+    </section>
+
+    <section class="hidden game">
+      <img class="hidden playerGreen" src="assets/PewPew.png" />
+      <img class="hidden blinkGreen" src="assets/PewGreenBlink.png" />
+      <img class="hidden greenDead" src="assets/Explosion1G.png" />
+      <img class="hidden blinkRed" src="assets/PewRedBlink.png" />
+      <img class="hidden playerRed" src="assets/Redpewpew.png" />
+      <img class="hidden redDead" src="assets/Explosion1R.png" />
+      <img class="hidden background" src="assets/spaceBackground.png" />
+      <p class="greenPoints">0</p>
+      <p class="redPoints">0</p>
+      <canvas class="canvas"> </canvas>
+    </section>
+    <script src="script.js?version=1.0.1"></script>
+  </body>
+</html>

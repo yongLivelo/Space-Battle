@@ -1,7 +1,6 @@
 const canvas = document.querySelector(".canvas");
 const ctx = canvas.getContext("2d");
 
-console.log("git test");
 const game = document.querySelector(".game");
 const menu = document.querySelector(".menuSec");
 let inGame = false;
